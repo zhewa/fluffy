@@ -35,7 +35,7 @@ timesTwo <- function(x) {
 # This function returns a random integer between a and b
 randomNumber <- function(a, b) {
     # write your code here
-    res <- NULL
+    res <- runif(1, a, b)
     return(res)
 }
 
