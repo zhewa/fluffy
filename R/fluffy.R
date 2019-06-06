@@ -26,7 +26,11 @@ makeFluffy <- function(x) {
 # This function returns the input x multiplied by two
 timesTwo <- function(x) {
     # write your code here
+<<<<<<< HEAD
     res <- x * 2
+=======
+    res <- x*2
+>>>>>>> 75e9e7b2ef7dbe7da93e829b03aeb403d6fe6e40
     return(res)
 }
 
@@ -35,16 +39,20 @@ timesTwo <- function(x) {
 # This function returns a random integer between a and b
 randomNumber <- function(a, b) {
     # write your code here
+<<<<<<< HEAD
     res <- sample(a:b, 1)
+=======
+    res <- sample(a:b,1)
+>>>>>>> 75e9e7b2ef7dbe7da93e829b03aeb403d6fe6e40
     return(res)
 }
-
-
+randomNumber(2,6)
 # factorial
 # This function returns the factorial of x
 # Do not use the factorial built-in R function!
 fact <- function(x) {
     # write your code here
+<<<<<<< HEAD
   res <- 1
   if(x<=1){
     res <- 1
@@ -54,8 +62,16 @@ fact <- function(x) {
   }
   }
   return(res)
+=======
+    res <- 1
+    for(i in 1:x){
+      res <- res * i
+    }
+    return(res)
+>>>>>>> 75e9e7b2ef7dbe7da93e829b03aeb403d6fe6e40
 }
 
+fact(4)
 
 # Bonus questions:
 
