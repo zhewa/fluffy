@@ -16,6 +16,8 @@ makeFluffy <- function(x) {
 }
 
 
+# add one line
+
 # Excercises
 # Fill in roxygen2 documentations and complete the codes
 # Don't forget to write the corresponding unit tests!
