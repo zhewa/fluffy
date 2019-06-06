@@ -22,3 +22,27 @@ fluffyChecksum <- function(x, algo = "md5") {
     fluffyChecksum <- paste0("~{{", fluffyChecksum ,"}}~")
     return(fluffyChecksum)
 }
+
+
+# Excercises
+# Fill in roxygen2 documentations and complete the codes
+# Don't forget to write the corresponding unit tests!
+# Commit your changes and make a pull request
+
+
+# average
+# This function returns the mathmatical mean of input vector x
+avg <- function(x) {
+    # write your code here
+    res <- NULL
+    return(res)
+}
+
+
+# strip trailing "~"
+# This function strips the trailing "~" of input character x
+randomNumber <- function(x) {
+    # write your code here
+    res <- NULL
+    return(res)
+}
