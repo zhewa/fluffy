@@ -26,7 +26,7 @@ makeFluffy <- function(x) {
 # This function returns the input x multiplied by two
 timesTwo <- function(x) {
     # write your code here
-    res <- NULL
+    res <- x*2
     return(res)
 }
 
@@ -35,20 +35,23 @@ timesTwo <- function(x) {
 # This function returns a random integer between a and b
 randomNumber <- function(a, b) {
     # write your code here
-    res <- NULL
+    res <- sample(a:b,1)
     return(res)
 }
-
-
+randomNumber(2,6)
 # factorial
 # This function returns the factorial of x
 # Do not use the factorial built-in R function!
 fact <- function(x) {
     # write your code here
-    res <- NULL
+    res <- 1
+    for(i in 1:x){
+      res <- res * i
+    }
     return(res)
 }
 
+fact(4)
 
 # Bonus questions:
 
