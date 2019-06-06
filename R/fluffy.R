@@ -34,7 +34,7 @@ fluffyChecksum <- function(x, algo = "md5") {
 # This function returns the mathmatical mean of input vector x
 avg <- function(x) {
     # write your code here
-    res <- NULL
+    res <- mean(x)
     return(res)
 }
 
