@@ -10,4 +10,4 @@ test_that(desc = "Testing makeFluffy", {
     expect_equal(makeFluffy(NULL), "~{{}}~")
 })
 
-# add tests for other fuctions below
+# add unit tests for other fuctions below
