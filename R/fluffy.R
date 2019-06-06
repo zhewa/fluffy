@@ -14,7 +14,7 @@
 makeFluffy <- function(x) {
     return(paste0("~{{", x, "}}~"))
 }
-
+#Some changes
 
 # Excercises
 # Fill in roxygen2 documentations and complete the codes
@@ -26,8 +26,8 @@ makeFluffy <- function(x) {
 # This function returns the input x multiplied by two
 timesTwo <- function(x) {
     # write your code here
-    res <- NULL
-    return(res)
+    res <- NULL #ITS NULL
+    return(res) 
 }
 
 
@@ -35,7 +35,7 @@ timesTwo <- function(x) {
 # This function returns a random integer between a and b
 randomNumber <- function(a, b) {
     # write your code here
-    res <- NULL
+    res <- NULL #IT'S NULL
     return(res)
 }
 
