@@ -26,7 +26,7 @@ makeFluffy <- function(x) {
 # This function returns the input x multiplied by two
 timesTwo <- function(x) {
     # write your code here
-    res <- NULL
+    res <- x * 2
     return(res)
 }
 
@@ -35,7 +35,7 @@ timesTwo <- function(x) {
 # This function returns a random integer between a and b
 randomNumber <- function(a, b) {
     # write your code here
-    res <- NULL
+    res <- runif(1, a, b)
     return(res)
 }
 
@@ -45,7 +45,15 @@ randomNumber <- function(a, b) {
 # Do not use the factorial built-in R function!
 fact <- function(x) {
     # write your code here
-    res <- NULL
+    num <- 1
+    if (x <= 1){
+        res <- 1
+    } else {
+        for (i in 1:x){
+            num <- num * i
+        }
+        res <- num
+    }
     return(res)
 }
 
@@ -57,7 +65,11 @@ fact <- function(x) {
 # Do not use the factorial built-in R function!
 factRecursion <- function(x) {
     # write your code here
-    res <- NULL
+    if (x <= 1){
+        res <- 1
+    } else {
+        res <- (x* factRecursion(x-1))
+    }
     return(res)
 }
 
@@ -67,6 +79,9 @@ factRecursion <- function(x) {
 # Do not use the factorial built-in R function!
 factMemoiz <- function(x) {
     # write your code here
-    res <- NULL
-    return(res)
+    if (x <= 1){
+        return(1)
+    } else {
+        return(factMemoiz(x - 1) * x)
+    }
 }
