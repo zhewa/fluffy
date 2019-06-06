@@ -34,7 +34,7 @@ fluffyChecksum <- function(x, algo = "md5") {
 # This function returns the mathmatical mean of input vector x
 avg <- function(x) {
     # write your code here
-    res <- NULL
+    res <- mean(x)
     return(res)
 }
 
@@ -43,6 +43,77 @@ avg <- function(x) {
 # This function strips the trailing "~" of input character x
 stripTilde <- function(x) {
     # write your code here
-    res <- NULL
+    res <- substr(x, 1, nchar(x) - 1)
     return(res)
+}
+
+
+# Excercises
+# Fill in roxygen2 documentations and complete the codes
+# Don't forget to write the corresponding unit tests!
+# Commit your changes and make a pull request
+
+
+# times two
+# This function returns the input x multiplied by two
+timesTwo <- function(x) {
+    # write your code here
+    res <- x * 2
+    return(res)
+}
+
+
+# random number
+# This function returns a random integer between a and b
+randomNumber <- function(a, b) {
+    # write your code here
+    res <- runif(1, a, b)
+    return(res)
+}
+
+
+# factorial
+# This function returns the factorial of x
+# Do not use the factorial built-in R function!
+fact <- function(x) {
+    # write your code here
+    num <- 1
+    if (x <= 1){
+        res <- 1
+    } else {
+        for (i in 1:x){
+            num <- num * i
+        }
+        res <- num
+    }
+    return(res)
+}
+
+
+# Bonus questions:
+
+# factorial (recursion)
+# This function returns the factorial of x using recursion
+# Do not use the factorial built-in R function!
+factRecursion <- function(x) {
+    # write your code here
+    if (x <= 1){
+        res <- 1
+    } else {
+        res <- (x* factRecursion(x-1))
+    }
+    return(res)
+}
+
+
+# factorial (memoization)
+# This function returns the factorial of x using memoization
+# Do not use the factorial built-in R function!
+factMemoiz <- function(x) {
+    # write your code here
+    if (x <= 1){
+        return(1)
+    } else {
+        return(factMemoiz(x - 1) * x)
+    }
 }

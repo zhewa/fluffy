@@ -12,9 +12,11 @@ Encoding: UTF-8
 LazyData: false
 Depends:
     R (>= 3.5)
-
+<<<<<<< HEAD
+=======
 Imports:
     digest
+>>>>>>> cd9f43783e6f3296a76c97f25109f8fc1030d889
 Suggests:
     testthat,
     lintr
