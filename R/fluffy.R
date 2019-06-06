@@ -43,7 +43,7 @@ avg <- function(x) {
 # This function strips the trailing "~" of input character x
 stripTilde <- function(x) {
     # write your code here
-    res <- NULL
+    res <- substr(x, 1, nchar(x) - 1)
     return(res)
 }
 
