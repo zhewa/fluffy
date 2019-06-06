@@ -79,6 +79,9 @@ factRecursion <- function(x) {
 # Do not use the factorial built-in R function!
 factMemoiz <- function(x) {
     # write your code here
-    res <- NULL
-    return(res)
+    if (x <= 1){
+        return(1)
+    } else {
+        return(factMemoiz(x - 1) * x)
+    }
 }
