@@ -41,7 +41,7 @@ avg <- function(x) {
 
 # strip trailing "~"
 # This function strips the trailing "~" of input character x
-randomNumber <- function(x) {
+stripTilde <- function(x) {
     # write your code here
     res <- NULL
     return(res)
