@@ -19,7 +19,7 @@
 #' @export
 fluffyChecksum <- function(x, algo = "md5") {
     fluffyChecksum <- digest::digest(x, algo = algo)
-    fluffyChecksum <- paste0("~{{", fluffyChecksum ,"}}~")
+    fluffyChecksum <- paste0("~{{", fluffyChecksum, "}}~")
     return(fluffyChecksum)
 }
 
