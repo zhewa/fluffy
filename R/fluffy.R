@@ -16,19 +16,28 @@ makeFluffy <- function(x) {
 }
 
 
-# add one line
-
 # Excercises
 # Fill in roxygen2 documentations and complete the codes
 # Don't forget to write the corresponding unit tests!
 # Commit your changes and make a pull request
 
 
-# times two
-# This function returns the input x multiplied by two
+
+#' @title Times Two
+#' @description multiplie to input number by two
+#' @param x, one object for calculation.
+#' @details This function returns the input x multiplied by two
+#' @return A number \code{x}.
+#' @seealso \code{\link{paste}} \code{\link{paste0}}
+#' @examples
+#' makeFluffy(1)
+#' makeFluffy(0)
+#' makeFluffy(-0.0001)
+#' @author Timo
+#' @export
 timesTwo <- function(x) {
     # write your code here
-    res <- NULL
+    res <- x * 2
     return(res)
 }
 
