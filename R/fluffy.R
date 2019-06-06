@@ -26,8 +26,8 @@ makeFluffy <- function(x) {
 # This function returns the input x multiplied by two
 timesTwo <- function(x) {
     # write your code here
-    res <- NULL
-    return(res)
+    res <- NULL #ITS NULL
+    return(res) 
 }
 
 
