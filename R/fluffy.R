@@ -45,7 +45,7 @@ randomNumber <- function(a, b) {
 # Do not use the factorial built-in R function!
 fact <- function(x) {
     # write your code here
-    res <- NULL
+    res <- 
     return(res)
 }
 
@@ -57,7 +57,11 @@ fact <- function(x) {
 # Do not use the factorial built-in R function!
 factRecursion <- function(x) {
     # write your code here
-    res <- NULL
+    if (x <= 1){
+    res <- 1
+    } else {
+    res <- (x* factRecursion(x-1))
+    }
     return(res)
 }
 
