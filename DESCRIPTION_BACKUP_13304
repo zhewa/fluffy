@@ -1,0 +1,23 @@
+Package: fluffy
+Title: R package development example
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Zhe",
+           family = "Wang",
+           role = c("aut", "cre"),
+           email = "zhe@bu.edu")
+Description: An example R package for practising software development using Git and Github.
+License: MIT
+Encoding: UTF-8
+LazyData: false
+Depends:
+    R (>= 3.5)
+<<<<<<< HEAD
+=======
+Imports:
+    digest
+>>>>>>> cd9f43783e6f3296a76c97f25109f8fc1030d889
+Suggests:
+    testthat,
+    lintr
+RoxygenNote: 6.1.1
